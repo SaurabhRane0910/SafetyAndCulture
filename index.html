@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b1220" />
+    <title>Safety &amp; Culture — Safer work. Stronger teams.</title>
+    <meta
+      name="description"
+      content="A creative single-page website for Safety & Culture: modern, responsive, smooth-scrolling navigation, animated UI, pricing, and a validated contact form."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <header class="topbar" id="top">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="#home" data-link>
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 2.5c3.2 2.6 6.6 3.9 9 4.6v6.8c0 5.4-4.2 8.3-9 10.6C7.2 22.2 3 19.3 3 13.9V7.1c2.4-.7 5.8-2 9-4.6Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+              <path
+                d="M8.2 12.2l2.3 2.3 5.3-5.3"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span class="brand__text">Safety &amp; Culture</span>
+        </a>
+
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+          <span class="sr-only">Open menu</span>
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <a class="nav__link" href="#home" data-link>Home</a>
+          <a class="nav__link" href="#pricing" data-link>Pricing</a>
+          <a class="nav__link" href="#contact" data-link>Contact</a>
+          <!-- added tour link -->
+          <a class="nav__link" href="#" id="takeTour" data-link>Take a tour</a>
+          <a class="nav__cta" href="#contact" data-link>Book a demo</a>
+        </div>
+        <!-- theme toggle button placed just outside the menu for desktop layout -->
+        <button class="theme-toggle" aria-label="Toggle light/dark mode" id="themeToggle">🌙</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section hero" id="home" aria-label="Home">
+        <div class="bg" aria-hidden="true">
+          <div class="bg__grid"></div>
+          <div class="orb orb--a"></div>
+          <div class="orb orb--b"></div>
+          <div class="orb orb--c"></div>
+        </div>
+
+        <div class="container hero__wrap">
+          <div class="hero__content reveal">
+            <p class="eyebrow">
+              <span class="pill">Safety-first</span>
+              <span class="pill pill--ghost">Culture-led</span>
+            </p>
+            <h1 class="hero__title">
+              Safer work.
+              <span class="gradient-text">Stronger teams.</span>
+            </h1>
+            <p class="hero__subtitle">
+              Build a workplace where hazards are spotted early, conversations feel safe, and good habits stick.
+              Training, reporting, and culture rituals—designed as one system.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#pricing" data-link>
+                View pricing
+                <span class="btn__icon" aria-hidden="true">→</span>
+              </a>
+              <a class="btn btn--secondary" href="#contact" data-link>Talk to a specialist</a>
+            </div>
+
+            <div class="trust">
+              <div class="trust__item">
+                <span class="trust__num" data-counter="42">0</span>
+                <span class="trust__label">days to measurable adoption</span>
+              </div>
+              <div class="trust__item">
+                <span class="trust__num" data-counter="3.7">0</span>
+                <span class="trust__label">x more near-miss reports</span>
+              </div>
+              <div class="trust__item">
+                <span class="trust__num" data-counter="18">0</span>
+                <span class="trust__label">% fewer repeat incidents</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__panel reveal" data-delay="120">
+            <div class="panel">
+              <div class="panel__top">
+                <span class="panel__badge">Live pulse</span>
+                <span class="panel__dot" aria-hidden="true"></span>
+              </div>
+              <div class="panel__body">
+                <div class="metric">
+                  <div class="metric__label">Safety climate score</div>
+                  <div class="metric__bar">
+                    <span class="metric__fill" style="--w: 86%"></span>
+                  </div>
+                  <div class="metric__meta">
+                    <span>86/100</span>
+                    <span class="metric__trend up">+6 this month</span>
+                  </div>
+                </div>
+
+                <div class="cards">
+                  <article class="mini" data-tilt>
+                    <h3 class="mini__title">Micro-learnings</h3>
+                    <p class="mini__text">2-min drills that fit shift changes.</p>
+                    <span class="mini__tag">Auto-scheduled</span>
+                  </article>
+                  <article class="mini" data-tilt>
+                    <h3 class="mini__title">Near-miss loop</h3>
+                    <p class="mini__text">From report → action → share-back.</p>
+                    <span class="mini__tag">Frictionless</span>
+                  </article>
+                  <article class="mini" data-tilt>
+                    <h3 class="mini__title">Culture rituals</h3>
+                    <p class="mini__text">Daily huddles with guided prompts.</p>
+                    <span class="mini__tag">Team-led</span>
+                  </article>
+                </div>
+              </div>
+              <div class="panel__bottom">
+                <a class="link" href="#contact" data-link>
+                  See it in action <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-hint" aria-hidden="true">
+          <span class="scroll-hint__mouse"></span>
+          <span class="scroll-hint__text">Scroll</span>
+        </div>
+      </section>
+
+      <section class="section pricing" id="pricing" aria-label="Pricing">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2 class="section__title">Pricing that scales with your crews</h2>
+            <p class="section__subtitle">
+              Start lean, prove impact, then expand across sites. Every plan includes guided rollout and a safety-culture toolkit.
+            </p>
+          </div>
+
+          <div class="pricing__grid">
+            <article class="price-card reveal" data-delay="60" data-tilt>
+              <header class="price-card__head">
+                <h3 class="price-card__name">Starter</h3>
+                <p class="price-card__desc">For a single team getting momentum.</p>
+              </header>
+              <div class="price-card__price">
+                <span class="price-card__amount">$19</span>
+                <span class="price-card__per">/ user / month</span>
+              </div>
+              <ul class="features">
+                <li>Micro-learning library</li>
+                <li>Near-miss reporting</li>
+                <li>Weekly pulse checks</li>
+                <li>Email support</li>
+              </ul>
+              <a class="btn btn--secondary btn--block" href="#contact" data-link>Choose Starter</a>
+            </article>
+
+            <article class="price-card price-card--featured reveal" data-delay="120" data-tilt>
+              <div class="price-card__glow" aria-hidden="true"></div>
+              <header class="price-card__head">
+                <div class="price-card__row">
+                  <h3 class="price-card__name">Pro</h3>
+                  <span class="chip">Most popular</span>
+                </div>
+                <p class="price-card__desc">For sites that want consistent habits.</p>
+              </header>
+              <div class="price-card__price">
+                <span class="price-card__amount">$39</span>
+                <span class="price-card__per">/ user / month</span>
+              </div>
+              <ul class="features">
+                <li>Everything in Starter</li>
+                <li>Action-tracking workflows</li>
+                <li>Huddle prompts + templates</li>
+                <li>Dashboards + exports</li>
+              </ul>
+              <a class="btn btn--primary btn--block" href="#contact" data-link>Choose Pro</a>
+            </article>
+
+            <article class="price-card reveal" data-delay="180" data-tilt>
+              <header class="price-card__head">
+                <h3 class="price-card__name">Enterprise</h3>
+                <p class="price-card__desc">For multi-site operations and compliance.</p>
+              </header>
+              <div class="price-card__price">
+                <span class="price-card__amount">Custom</span>
+                <span class="price-card__per">pricing</span>
+              </div>
+              <ul class="features">
+                <li>Everything in Pro</li>
+                <li>SSO + advanced roles</li>
+                <li>Automations + integrations</li>
+                <li>Dedicated success manager</li>
+              </ul>
+              <a class="btn btn--secondary btn--block" href="#contact" data-link>Talk Enterprise</a>
+            </article>
+          </div>
+
+          <div class="pricing__foot reveal" data-delay="220">
+            <div class="callout">
+              <p>
+                <strong>Tip:</strong> Pair pricing with a 30-day “Safety &amp; Culture Sprint” for fast behavior change.
+              </p>
+              <a class="link" href="#contact" data-link>
+                Get the sprint plan <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-label="Contact">
+        <div class="container">
+          <div class="contact__grid">
+            <div class="contact__copy reveal">
+              <h2 class="section__title">Let’s build your next best day</h2>
+              <p class="section__subtitle">
+                Tell us your environment (office, plant, warehouse, field). We’ll reply with a rollout plan you can run this month.
+              </p>
+
+              <div class="info">
+                <div class="info__item">
+                  <span class="info__k">Typical response</span>
+                  <span class="info__v">Within 24 hours</span>
+                </div>
+                <div class="info__item">
+                  <span class="info__k">What you’ll get</span>
+                  <span class="info__v">A tailored program + demo link</span>
+                </div>
+                <div class="info__item">
+                  <span class="info__k">No spam</span>
+                  <span class="info__v">Just one helpful follow-up</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact__form reveal" data-delay="120">
+              <form class="form" id="contactForm" novalidate>
+                <div class="form__row">
+                  <label class="field">
+                    <span class="field__label">Name</span>
+                    <input class="field__input" type="text" name="name" autocomplete="name" placeholder="Jane Doe" required />
+                    <span class="field__error" data-error-for="name" role="status" aria-live="polite"></span>
+                  </label>
+
+                  <label class="field">
+                    <span class="field__label">Email</span>
+                    <input
+                      class="field__input"
+                      type="email"
+                      name="email"
+                      autocomplete="email"
+                      placeholder="jane@company.com"
+                      required
+                      inputmode="email"
+                    />
+                    <span class="field__error" data-error-for="email" role="status" aria-live="polite"></span>
+                  </label>
+                </div>
+
+                <label class="field">
+                  <span class="field__label">Message</span>
+                  <textarea
+                    class="field__input field__textarea"
+                    name="message"
+                    placeholder="What site type, team size, and your #1 safety challenge?"
+                    required
+                    rows="5"
+                  ></textarea>
+                  <span class="field__hint">Minimum 10 characters.</span>
+                  <span class="field__error" data-error-for="message" role="status" aria-live="polite"></span>
+                </label>
+
+                <button class="btn btn--primary btn--block" type="submit" id="submitBtn">
+                  Send message
+                  <span class="btn__icon" aria-hidden="true">✦</span>
+                </button>
+
+                <p class="form__fineprint">
+                  By sending this message you agree we can contact you about Safety &amp; Culture. No backend—this demo only shows UI validation.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__wrap">
+        <div class="footer__brand">
+          <span class="brand__text">Safety &amp; Culture</span>
+          <span class="muted">Safer work. Stronger teams.</span>
+        </div>
+        <div class="footer__links">
+          <a href="#home" data-link>Home</a>
+          <a href="#pricing" data-link>Pricing</a>
+          <a href="#contact" data-link>Contact</a>
+        </div>
+        <div class="footer__meta muted">© <span id="year"></span> Safety &amp; Culture</div>
+      </div>
+    </footer>
+
+    <button class="to-top" type="button" aria-label="Back to top">
+      <span aria-hidden="true">↑</span>
+    </button>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true">
+      <div class="toast__card">
+        <div class="toast__spark" aria-hidden="true"></div>
+        <div>
+          <div class="toast__title">Message ready</div>
+          <div class="toast__text">Validation passed. In a real app, this would be sent.</div>
+        </div>
+        <button class="toast__close" type="button" aria-label="Dismiss">✕</button>
+      </div>
+    </div>
+
+    <!-- tour overlay element (hidden until tour starts) -->
+    <div id="tourOverlay" class="tour-overlay hidden" aria-hidden="true">
+      <div class="tour-message">
+        <p id="tourText" class="text"></p>
+        <div class="tour-controls">
+          <button id="tourPrev" class="btn">Prev</button>
+          <button id="tourNext" class="btn">Next</button>
+          <button id="tourClose" class="btn">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- scroll progress indicator -->
+    <div id="scrollProgress" class="scroll-progress" aria-hidden="true"></div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
